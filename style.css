@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Libre Franklin";
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.container .wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 50%;
+  min-height: 100vh;
+  padding: 50px 50px;
+}
+@media screen and (max-width: 768px) {
+  .container .wrapper {
+    width: 90%;
+    min-height: 100vh;
+    justify-content: space-around;
+  }
+}
+.container .box-superior {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 50%;
+}
+.container .box-superior img {
+  width: 80px;
+  align-self: center;
+}
+.container .box-superior .titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .box-superior .titulo h1 {
+  font-size: 3rem;
+  color: #969696;
+  font-weight: lighter;
+  margin-bottom: -5px;
+}
+@media screen and (max-width: 768px) {
+  .container .box-superior .titulo h1 {
+    font-size: 1.8rem;
+  }
+}
+.container .box-superior .titulo h1 span {
+  color: #151f29;
+  font-weight: bold;
+}
+.container .box-superior .titulo span {
+  color: #151f29;
+}
+.container .box-superior .suscribe, .container .box-superior form {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+.container .box-superior .suscribe .wrapper-input, .container .box-superior form .wrapper-input {
+  width: 65%;
+}
+@media screen and (max-width: 768px) {
+  .container .box-superior .suscribe .wrapper-input, .container .box-superior form .wrapper-input {
+    width: 100%;
+  }
+}
+.container .box-superior .suscribe input[type=email], .container .box-superior form input[type=email] {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #c2d3ff;
+  border-radius: 27px;
+  padding: 20px;
+  box-sizing: border-box;
+  color: #151f29;
+  font-family: "Libre Franklin";
+}
+.container .box-superior .suscribe input::placeholder, .container .box-superior form input::placeholder {
+  color: #c2d3ff;
+}
+.container .box-superior .suscribe input:focus, .container .box-superior form input:focus {
+  border: 1px solid #4f7df3;
+  color: #4f7df3;
+  outline: none;
+}
+.container .box-superior .suscribe input[type=button], .container .box-superior form input[type=button] {
+  width: 30%;
+  height: 40px;
+  border: none;
+  border-radius: 25px;
+  background-color: #4f7df3;
+  font-family: "Libre Franklin";
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.container .box-superior .suscribe input[type=button]:hover, .container .box-superior form input[type=button]:hover {
+  opacity: 0.9;
+}
+@media screen and (max-width: 768px) {
+  .container .box-superior .suscribe input[type=button], .container .box-superior form input[type=button] {
+    margin-top: 5px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container .box-superior .suscribe, .container .box-superior form {
+    flex-direction: column;
+  }
+}
+
+.box-medio {
+  margin-top: 50px;
+}
+@media screen and (max-width: 768px) {
+  .box-medio {
+    margin-top: 0px;
+  }
+}
+.box-medio img {
+  width: 100%;
+}
+
+.box-inferior {
+  display: flex;
+  flex-direction: column;
+  min-height: 50%;
+  align-items: center;
+}
+.box-inferior .media {
+  display: flex;
+  justify-content: center;
+}
+.box-inferior .media .wrapper-icon {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #969696;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+  cursor: pointer;
+}
+.box-inferior .media .wrapper-icon:hover {
+  background-color: #4f7df3;
+}
+.box-inferior .media .wrapper-icon:hover .facebook, .box-inferior .media .wrapper-icon:hover .twitter, .box-inferior .media .wrapper-icon:hover .instagram {
+  fill: white;
+}
+.box-inferior .media .wrapper-icon .facebook, .box-inferior .media .wrapper-icon .twitter, .box-inferior .media .wrapper-icon .instagram {
+  width: 12px;
+  fill: #4f7df3;
+  align-self: center;
+}
+
+.no-visible {
+  display: none;
+}
+
+.red {
+  color: #ff5263;
+  font-size: 0.7rem;
+  margin-left: 20px;
+}
+
+.copy {
+  color: #969696;
+  font-size: 0.7rem;
+}
+
+.error-input {
+  border: 1px solid #ff5263 !important;
+}
+
+/*# sourceMappingURL=style.css.map */
